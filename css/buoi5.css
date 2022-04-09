@@ -1,0 +1,45 @@
+.container ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 20px;
+}
+.container ul a{
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container ul li {
+    position: relative;
+}
+ .container ul li:before{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background: red;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    transition: 0.5s;
+}
+/* .container ul li:hover:before{
+    width: 100%;
+}  */
+@keyframes show{
+    0%{
+        width: 0%;
+    }
+    50%{
+        background: yellow;
+    }
+    75%
+    {
+        height: 10px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.container ul li:hover::before{
+    animation: show 1s linear infinite alternate;
+}

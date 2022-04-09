@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url('../images/nghiatrang1.jpg');
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    animation: lightning 6s linear infinite;
+}
+
+.container img:nth-child(1) {
+    height: 80px;
+    top: 52%;
+    filter: blur(0px);
+    position: absolute;
+    animation: ghostfly 6s linear infinite reverse;
+}
+
+@keyframes ghostfly {
+    0% {
+        left: 20%;
+        filter: blur(30px);
+    }
+    25% {
+        left: 30%;
+        filter: blur(3px);
+    }
+    50% {
+        left: 50%;
+        filter: blur(0px);
+    }
+    75% {
+        left: 70%;
+        filter: blur(5px);
+    }
+    100% {
+        left: 90%;
+        filter: blur(30px);
+    }
+}
+
+.container img:nth-child(2) {
+    height: 300px;
+    filter: blur(0px);
+    position: absolute;
+    animation: ghostappear 6s linear infinite;
+}
+
+@keyframes ghostappear {
+    0% {
+        top: 50%;
+        filter: blur(30px);
+    }
+    25% {
+        top: 15%;
+        filter: blur(5px);
+    }
+    80% {
+        top: 10%;
+        filter: blur(0px);
+    }
+    100% {
+        top: 8%;
+        filter: blur(50px);
+    }
+}
+
+@keyframes lightning {
+    0% {
+        filter: brightness(30%);
+    }
+    25% {
+        filter: brightness(100%);
+    }
+    30% {
+        filter: brightness(50%);
+    }
+    50% {
+        filter: brightness(30%);
+    }
+    60% {
+        filter: brightness(100%);
+    }
+    80% {
+        filter: brightness(30%);
+    }
+    100% {
+        filter: brightness(200%);
+    }
+}
+
+.container img:nth-child(3) {
+    height: 280px;
+    top: 64%;
+    left: 30%;
+    position: absolute;
+    animation: pumpkin 0.2s linear infinite;
+}
+
+@keyframes pumpkin {
+    100% {
+        transform: translateY(2px);
+    }
+}
+
+.container img:nth-child(4) {
+    height: 127px;
+    top: 12%;
+    left: 14%;
+    position: absolute;
+    animation: death 5s linear infinite;
+}
+
+@keyframes death {
+    100% {
+        filter: blur(50px);
+    }
+    75% {
+        filter: blur(5px);
+    }
+    50% {
+        filter: blur(0px);
+    }
+    0% {
+        filter: blur(25px);
+    }
+}
+
+.container img:nth-child(5) {
+    height: 200px;
+    top: 21%;
+    filter: blur(0px);
+    position: absolute;
+    transform: rotateX(15deg);
+    animation: death1 6s linear infinite;
+}
+
+@keyframes death1 {
+    0% {
+        left: 20%;
+        filter: blur(30px);
+    }
+    25% {
+        left: 30%;
+        filter: blur(2px);
+    }
+    50% {
+        left: 50%;
+        filter: blur(0px);
+    }
+    75% {
+        left: 70%;
+        filter: blur(5px);
+    }
+    100% {
+        left: 90%;
+        filter: blur(30px);
+    }
+}
+
+.section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/rain-300x300.png);
+    animation: rain 0.4s linear infinite;
+    opacity: 0;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0 0;
+        opacity: 1;
+    }
+    100% {
+        background-position: 8% 80%;
+        opacity: 1;
+    }
+}
+
+.container img:nth-child(6) {
+    height: 127px;
+    top: 2%;
+    left: 53%;
+    position: absolute;
+    animation: ss 1s linear infinite;
+}
+
+@keyframes ss {
+    0% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(200%)
+    }
+}
+
+.container img:nth-child(7) {
+    height: 127px;
+    top: 2%;
+    left: 20%;
+    position: absolute;
+    animation: ss 1s linear infinite;
+}
+
+.container img:nth-child(8) {
+    height: 127px;
+    top: 10%;
+    left: 30%;
+    position: absolute;
+    animation: ss1 0.5s linear infinite;
+}
+
+@keyframes ss1 {
+    0% {
+        filter: brightness(0%);
+    }
+    50% {
+        filter: brightness(30%);
+    }
+    80% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(200%)
+    }
+}
+
+.container img:nth-child(9) {
+    height: 280px;
+    top: 64%;
+    left: 30%;
+    position: absolute;
+}
